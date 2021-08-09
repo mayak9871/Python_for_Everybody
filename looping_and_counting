@@ -1,0 +1,20 @@
+#Customized version of Exercise 6.3 with an input from the user:
+#Encapsulate this code in a function named count, and generalize
+#It so that it accepts the string and the letter as arguments.
+
+input_word = input("Enter a word: ")
+input_letter = input("Enter a letter: ")
+
+#define the function and its parameters
+def count_letters(input_word, input_letter):
+    count = 0
+
+    for letter in input_word:
+        if letter == input_letter:
+            count += 1
+    print(input_word, input_letter)
+    print("In the word '{}', the number of times we can find the letter '{}' is:" .format(input_word, input_letter))
+    print(count)
+
+# call the function and pass in the arguments
+count_letters(input_word, input_letter)
