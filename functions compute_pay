@@ -1,0 +1,12 @@
+# create a function compute_pay which takes two arguments
+rate = 0
+hour = 0
+pay = 0
+
+
+def compute_pay(hour, rate):
+  pay = hour * rate
+  print("You worked {} hours at the rate of {} $ per hour. You earned: ".format(hour, rate))
+  return pay
+
+print(compute_pay(40, 10))
