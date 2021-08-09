@@ -1,0 +1,3 @@
+friends = ['Josh', 'Jim', 'Kelly', 'John']
+for friend in friends:
+  print("{}, I miss you so!".format(friend))
