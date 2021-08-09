@@ -1,0 +1,6 @@
+while True:
+  word = input("Enter a four-letter word: ")
+  if word == 'help':
+    break
+  print(word)
+print("Done!")
