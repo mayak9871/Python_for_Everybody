@@ -1,0 +1,7 @@
+largest = None
+print("Before:", largest)
+for itervar in [1, 70, 30, 50, 60, 35, 67, 78]:
+    if largest is None or itervar > largest:
+        largest = itervar
+    print("Inside the loop:", itervar,largest)
+print("Largest:", largest)
