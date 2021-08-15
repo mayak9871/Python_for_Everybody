@@ -1,0 +1,23 @@
+# Write a program to read through a mail log
+# build a histogram using a dictionary to count
+# how many messages have come from each email
+# address, and print the dictionary
+try:
+    fhand = open("mbox-short.txt", "r")
+except:
+    print("File cannot be opened")
+    exit()
+
+emaildict = dict()
+linelist = []
+
+for line in fhand:
+    linelist = line.split()
+    if line.startswith("From "):
+        email = linelist[1]
+        if email not in emaildict:
+            emaildict[email] = 1
+        else:
+            emaildict[email] =+ 1
+
+print(emaildict)
